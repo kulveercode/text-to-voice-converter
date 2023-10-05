@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #c50f0f;
+    color: #fff;
+}
+.hero h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+textarea {
+    width: 600px;
+    height: 250px;
+    background: #ec2424;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+    color: #fff;
+}
+textarea::placeholder {
+    font-size: 16px;
+    color: #fff;
+}
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    background: #ec2424;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+button i {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+select {
+    flex: 1;
+    color: #fff;
+    background: #ec2424;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    appearance: none;
+    background-image: url(/images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+    .hero h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    textarea {
+        max-width: 100%;
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+    .row {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+        margin: 0 20px;
+    }
+    select {
+        font-style: 14px;
+        background-position-x: calc(100% - 16px);
+        background-position-y: 16px;
+        margin-right: 5px;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    button {
+        font-size: 14px;
+        display: flex;
+        padding: 10px 24px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    button i {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
